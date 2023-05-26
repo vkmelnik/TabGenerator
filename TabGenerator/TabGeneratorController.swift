@@ -14,6 +14,7 @@ class TabGeneratorController: UIViewController {
     private struct Constants {
         static let levelThreshold: Float = -30
         static let estimationStrategy: EstimationStrategy = .yin
+        static let notesPerFrame: Int = 16
         static let start = "Начать запись"
         static let stop = "Стоп"
     }
@@ -30,6 +31,7 @@ class TabGeneratorController: UIViewController {
 
     var tab: TabModel = TabModel(tuning: .standart, sounds: [])
     var timer: Int = 0
+    private var currentFrame: Int = 0
     private var recording: Bool = false
 
     override func viewDidLoad() {
@@ -85,6 +87,7 @@ class TabGeneratorController: UIViewController {
             pitchEngine.stop()
             recordButton.setTitle(Constants.start, for: .normal)
             recording = false
+            currentFrame = 0
             TabSaveWorker.shared.save(name: tabView.title.text ?? "testTab", tab: tab)
         } else {
             tab = TabModel(tuning: .standart, sounds: [])
@@ -125,6 +128,7 @@ extension TabGeneratorController: PitchEngineDelegate {
             }
 
             tab.sounds.append(newBar)
+            currentFrame = tab.sounds.count / Constants.notesPerFrame
             tabView.tabFrameView.collectionView.reloadData()
             timer = 0
         }
@@ -150,6 +154,7 @@ extension TabGeneratorController: PitchEngineDelegate {
                 Sound.noSound,
                 Sound.noSound
             ])
+            currentFrame = tab.sounds.count / Constants.notesPerFrame
             tabView.tabFrameView.collectionView.reloadData()
             timer = 0
         }
@@ -166,8 +171,8 @@ extension TabGeneratorController: UICollectionViewDelegate, UICollectionViewData
             return UICollectionViewCell()
         }
         cell.configureUI()
-        let row = indexPath.item / 16
-        let column = tab.sounds.count / 16 * 16 + indexPath.item % 16
+        let row = indexPath.item / Constants.notesPerFrame
+        let column = currentFrame * Constants.notesPerFrame + indexPath.item % Constants.notesPerFrame
         if tab.sounds.count > column && tab.sounds[column].count > row {
             switch tab.sounds[column][row] {
             case .sound(let sound):
@@ -187,7 +192,7 @@ extension TabGeneratorController: UICollectionViewDelegate, UICollectionViewData
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(
-            width: collectionView.frame.width / 16,
+            width: collectionView.frame.width / CGFloat(Constants.notesPerFrame),
             height: collectionView.frame.height / 6
         )
     }
