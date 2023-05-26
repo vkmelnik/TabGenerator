@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		754B30DD31B23F0A4498A810 /* Pods_TabGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F757F727581EB9B4A0FE3D /* Pods_TabGenerator.framework */; };
+		DA2DCCD32A20A7500045369C /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DCCD22A20A7500045369C /* Sound.swift */; };
+		DA2DCCD52A20A92B0045369C /* TabGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DCCD42A20A92B0045369C /* TabGeneratorView.swift */; };
+		DA2DCCD72A20A9950045369C /* UIView+Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DCCD62A20A9950045369C /* UIView+Pin.swift */; };
+		DA2DCCDA2A20B3A40045369C /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DCCD92A20B3A40045369C /* TabModel.swift */; };
+		DA2DCCDC2A20B3B50045369C /* Tuning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DCCDB2A20B3B50045369C /* Tuning.swift */; };
+		DA47BB732A20C24E0032B93F /* TabFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47BB722A20C24E0032B93F /* TabFrameView.swift */; };
+		DA47BB752A20C2960032B93F /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47BB742A20C2960032B93F /* SoundCell.swift */; };
+		DA47BB772A20DDE90032B93F /* TabGeneratorWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47BB762A20DDE90032B93F /* TabGeneratorWorker.swift */; };
+		DA47BB792A20DDF40032B93F /* TabGeneratorWorkerLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47BB782A20DDF40032B93F /* TabGeneratorWorkerLogic.swift */; };
+		DA47BB7D2A20E49E0032B93F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47BB7C2A20E49E0032B93F /* String+Extension.swift */; };
+		DA47BB7F2A20EF6D0032B93F /* TabSaveWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47BB7E2A20EF6D0032B93F /* TabSaveWorker.swift */; };
+		DAD98E022A209D4B003A7DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD98E012A209D4B003A7DDE /* AppDelegate.swift */; };
+		DAD98E042A209D4B003A7DDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD98E032A209D4B003A7DDE /* SceneDelegate.swift */; };
+		DAD98E062A209D4B003A7DDE /* TabGeneratorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD98E052A209D4B003A7DDE /* TabGeneratorController.swift */; };
+		DAD98E0B2A209D4C003A7DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD98E0A2A209D4C003A7DDE /* Assets.xcassets */; };
+		DAD98E0E2A209D4C003A7DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD98E0C2A209D4C003A7DDE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A001450ED8036214A18FACA /* Pods-TabGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabGenerator.debug.xcconfig"; path = "Target Support Files/Pods-TabGenerator/Pods-TabGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		60F757F727581EB9B4A0FE3D /* Pods_TabGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		980C2C51AF760422496ED5D6 /* Pods-TabGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabGenerator.release.xcconfig"; path = "Target Support Files/Pods-TabGenerator/Pods-TabGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		DA2DCCD22A20A7500045369C /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		DA2DCCD42A20A92B0045369C /* TabGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabGeneratorView.swift; sourceTree = "<group>"; };
+		DA2DCCD62A20A9950045369C /* UIView+Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Pin.swift"; sourceTree = "<group>"; };
+		DA2DCCD92A20B3A40045369C /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		DA2DCCDB2A20B3B50045369C /* Tuning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuning.swift; sourceTree = "<group>"; };
+		DA47BB722A20C24E0032B93F /* TabFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFrameView.swift; sourceTree = "<group>"; };
+		DA47BB742A20C2960032B93F /* SoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
+		DA47BB762A20DDE90032B93F /* TabGeneratorWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabGeneratorWorker.swift; sourceTree = "<group>"; };
+		DA47BB782A20DDF40032B93F /* TabGeneratorWorkerLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabGeneratorWorkerLogic.swift; sourceTree = "<group>"; };
+		DA47BB7C2A20E49E0032B93F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DA47BB7E2A20EF6D0032B93F /* TabSaveWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSaveWorker.swift; sourceTree = "<group>"; };
+		DAD98DFE2A209D4B003A7DDE /* TabGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD98E012A209D4B003A7DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAD98E032A209D4B003A7DDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DAD98E052A209D4B003A7DDE /* TabGeneratorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabGeneratorController.swift; sourceTree = "<group>"; };
+		DAD98E0A2A209D4C003A7DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAD98E0D2A209D4C003A7DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAD98E0F2A209D4C003A7DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAD98DFB2A209D4B003A7DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754B30DD31B23F0A4498A810 /* Pods_TabGenerator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7A05DC529F723F9148EA155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60F757F727581EB9B4A0FE3D /* Pods_TabGenerator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C84B3C37BE7C50DC507984B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A001450ED8036214A18FACA /* Pods-TabGenerator.debug.xcconfig */,
+				980C2C51AF760422496ED5D6 /* Pods-TabGenerator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA2DCCD12A20A7470045369C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA2DCCD22A20A7500045369C /* Sound.swift */,
+				DA2DCCD92A20B3A40045369C /* TabModel.swift */,
+				DA2DCCDB2A20B3B50045369C /* Tuning.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA2DCCD82A20A99D0045369C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA2DCCD62A20A9950045369C /* UIView+Pin.swift */,
+				DA47BB7C2A20E49E0032B93F /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA47BB712A20C2310032B93F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA2DCCD42A20A92B0045369C /* TabGeneratorView.swift */,
+				DA47BB722A20C24E0032B93F /* TabFrameView.swift */,
+				DA47BB742A20C2960032B93F /* SoundCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA47BB7B2A20E2950032B93F /* TabGeneratorWorker */ = {
+			isa = PBXGroup;
+			children = (
+				DA47BB762A20DDE90032B93F /* TabGeneratorWorker.swift */,
+				DA47BB782A20DDF40032B93F /* TabGeneratorWorkerLogic.swift */,
+				DA47BB7E2A20EF6D0032B93F /* TabSaveWorker.swift */,
+			);
+			path = TabGeneratorWorker;
+			sourceTree = "<group>";
+		};
+		DAD98DF52A209D4B003A7DDE = {
+			isa = PBXGroup;
+			children = (
+				DAD98E002A209D4B003A7DDE /* TabGenerator */,
+				DAD98DFF2A209D4B003A7DDE /* Products */,
+				C84B3C37BE7C50DC507984B1 /* Pods */,
+				C7A05DC529F723F9148EA155 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAD98DFF2A209D4B003A7DDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD98DFE2A209D4B003A7DDE /* TabGenerator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAD98E002A209D4B003A7DDE /* TabGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				DA47BB7B2A20E2950032B93F /* TabGeneratorWorker */,
+				DA47BB712A20C2310032B93F /* Views */,
+				DA2DCCD82A20A99D0045369C /* Extensions */,
+				DA2DCCD12A20A7470045369C /* Models */,
+				DAD98E012A209D4B003A7DDE /* AppDelegate.swift */,
+				DAD98E032A209D4B003A7DDE /* SceneDelegate.swift */,
+				DAD98E052A209D4B003A7DDE /* TabGeneratorController.swift */,
+				DAD98E0A2A209D4C003A7DDE /* Assets.xcassets */,
+				DAD98E0C2A209D4C003A7DDE /* LaunchScreen.storyboard */,
+				DAD98E0F2A209D4C003A7DDE /* Info.plist */,
+			);
+			path = TabGenerator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAD98DFD2A209D4B003A7DDE /* TabGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD98E122A209D4C003A7DDE /* Build configuration list for PBXNativeTarget "TabGenerator" */;
+			buildPhases = (
+				A0953DAB72A8D1174FD3E266 /* [CP] Check Pods Manifest.lock */,
+				DAD98DFA2A209D4B003A7DDE /* Sources */,
+				DAD98DFB2A209D4B003A7DDE /* Frameworks */,
+				DAD98DFC2A209D4B003A7DDE /* Resources */,
+				65165DA12C93B5A26EA8374D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabGenerator;
+			productName = TabGenerator;
+			productReference = DAD98DFE2A209D4B003A7DDE /* TabGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAD98DF62A209D4B003A7DDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DAD98DFD2A209D4B003A7DDE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = DAD98DF92A209D4B003A7DDE /* Build configuration list for PBXProject "TabGenerator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAD98DF52A209D4B003A7DDE;
+			productRefGroup = DAD98DFF2A209D4B003A7DDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAD98DFD2A209D4B003A7DDE /* TabGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAD98DFC2A209D4B003A7DDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD98E0E2A209D4C003A7DDE /* LaunchScreen.storyboard in Resources */,
+				DAD98E0B2A209D4C003A7DDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65165DA12C93B5A26EA8374D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabGenerator/Pods-TabGenerator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabGenerator/Pods-TabGenerator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TabGenerator/Pods-TabGenerator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0953DAB72A8D1174FD3E266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TabGenerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAD98DFA2A209D4B003A7DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD98E062A209D4B003A7DDE /* TabGeneratorController.swift in Sources */,
+				DAD98E022A209D4B003A7DDE /* AppDelegate.swift in Sources */,
+				DA2DCCD72A20A9950045369C /* UIView+Pin.swift in Sources */,
+				DA47BB772A20DDE90032B93F /* TabGeneratorWorker.swift in Sources */,
+				DA47BB752A20C2960032B93F /* SoundCell.swift in Sources */,
+				DA2DCCD52A20A92B0045369C /* TabGeneratorView.swift in Sources */,
+				DA47BB7F2A20EF6D0032B93F /* TabSaveWorker.swift in Sources */,
+				DA47BB7D2A20E49E0032B93F /* String+Extension.swift in Sources */,
+				DA47BB792A20DDF40032B93F /* TabGeneratorWorkerLogic.swift in Sources */,
+				DA2DCCDC2A20B3B50045369C /* Tuning.swift in Sources */,
+				DAD98E042A209D4B003A7DDE /* SceneDelegate.swift in Sources */,
+				DA2DCCD32A20A7500045369C /* Sound.swift in Sources */,
+				DA2DCCDA2A20B3A40045369C /* TabModel.swift in Sources */,
+				DA47BB732A20C24E0032B93F /* TabFrameView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAD98E0C2A209D4C003A7DDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD98E0D2A209D4C003A7DDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAD98E102A209D4C003A7DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAD98E112A209D4C003A7DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAD98E132A209D4C003A7DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A001450ED8036214A18FACA /* Pods-TabGenerator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7J58STCQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TabGenerator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.hse.TabGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAD98E142A209D4C003A7DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980C2C51AF760422496ED5D6 /* Pods-TabGenerator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7J58STCQ74;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TabGenerator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.hse.TabGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAD98DF92A209D4B003A7DDE /* Build configuration list for PBXProject "TabGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD98E102A209D4C003A7DDE /* Debug */,
+				DAD98E112A209D4C003A7DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD98E122A209D4C003A7DDE /* Build configuration list for PBXNativeTarget "TabGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD98E132A209D4C003A7DDE /* Debug */,
+				DAD98E142A209D4C003A7DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAD98DF62A209D4B003A7DDE /* Project object */;
+}
