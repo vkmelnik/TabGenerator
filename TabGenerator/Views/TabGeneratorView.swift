@@ -21,12 +21,15 @@ class TabGeneratorView: UIView {
     let noteLabel = UILabel()
     let offsetLabel = UILabel()
     let tabFrameView = TabFrameView()
+    let leftButton = UIButton()
+    let rightButton = UIButton()
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
         configureTitle()
         configureNote()
         configureTabView()
+        configureButtons()
     }
 
     required init?(coder: NSCoder) {
@@ -66,5 +69,17 @@ class TabGeneratorView: UIView {
         tabFrameView.pinHorizontal(to: self, Constants.offset)
         tabFrameView.pinTop(to: noteLabel.bottomAnchor, Constants.offset)
         tabFrameView.setHeight(Constants.tabFrameHeight)
+    }
+
+    private func configureButtons() {
+        self.addSubview(leftButton)
+        leftButton.pinLeft(to: self, Constants.offset)
+        leftButton.pinTop(to: tabFrameView.bottomAnchor, Constants.offset)
+        leftButton.setTitle("<--", for: .normal)
+
+        self.addSubview(rightButton)
+        rightButton.pinRight(to: self, Constants.offset)
+        rightButton.pinTop(to: tabFrameView.bottomAnchor, Constants.offset)
+        rightButton.setTitle("-->", for: .normal)
     }
 }

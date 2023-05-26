@@ -79,6 +79,23 @@ class TabGeneratorController: UIViewController {
         tabView.pinTop(to: view.safeAreaLayoutGuide.topAnchor)
         tabView.tabFrameView.collectionView.delegate = self
         tabView.tabFrameView.collectionView.dataSource = self
+        tabView.leftButton.addTarget(self, action: #selector(goLeft), for: .touchUpInside)
+        tabView.rightButton.addTarget(self, action: #selector(goRight), for: .touchUpInside)
+    }
+
+    @objc
+    private func goLeft() {
+        currentFrame -= 1
+        if currentFrame < 0 {
+            currentFrame = 0
+        }
+        tabView.tabFrameView.collectionView.reloadData()
+    }
+
+    @objc
+    private func goRight() {
+        currentFrame += 1
+        tabView.tabFrameView.collectionView.reloadData()
     }
 
     @objc
@@ -145,7 +162,6 @@ extension TabGeneratorController: PitchEngineDelegate {
     public func pitchEngineWentBelowLevelThreshold(_ pitchEngine: PitchEngine) {
         timer += 1
         if timer > 1 {
-            print("Below level threshold")
             tab.sounds.append([
                 Sound.noSound,
                 Sound.noSound,
